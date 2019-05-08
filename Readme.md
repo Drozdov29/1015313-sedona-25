@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Анатолий Дроздов](https://up.htmlacademy.ru/htmlcss/25/user/1015313).
-* Наставник: [Анна Пономарёва] (https://htmlacademy.ru/profile/id153610).
+* Наставник: [Анна Пономарёва](https://htmlacademy.ru/profile/id153610).
 
 ---
 
