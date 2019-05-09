@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+  font-family: "PT Sans", "Arial", sans-serif;
+  display: block;
+}
+
+                                  /*ШАПКА САЙТА*/
+.wrapper {
+  min-width: 760px;
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 0 30px 5px rgba(50, 50, 50, .2); /*0-Ось Х, 0-Ось У, 15px- Размытие тени, 5px- Толщина тени, rgba- Цвет тени */
+
+  display: table;
+}
+
+.menu {
+  text-align: center;
+  background-color: #fff;
+}
+
+.menu-list {
+  margin: 0;          /*НЕ РАЗОБРАЛСЯ ОТКУДА БЕРУТСЯ ОТСТУПЫ ПО 16 (верх и низ)*/
+  padding: 20px 0;
+}
+
+.menu-tema {
+  display: inline;          /*Из вертикально списка в горизонтальный*/
+  width: 240px;
+}
+
+.menu-click {
+  text-decoration: none;         /*Убирает подчеркивание*/
+  text-transform: uppercase;     /*С большой буквы*/
+  font-weight: bold;             /*Толщина шрифта*/
+  font-size: 14px;
+  color: #000;
+
+  display: inline-block;
+  width: 20%;
+  vertical-align: top;
+}
+
+.left {
+  text-align: left;     /*Прижал меню к левому краю*/
+}
+
+.right {
+  text-align: right;    /*Прижал меню к правому краю*/
+}
+
+.menu-click:hover {             /*НАВЕДЕНИЕ на ссылку меняет цвет*/
+  color: #7fb4d3;
+}
+.menu-click:visited {             /*НАЖАТИЕ на ссылку меняет цвет*/
+  color: #dadada;
+}
+.menu-click:ACTIVE {             /*АКТИВНАЯ ссылкА меняет цвет*/
+  color: #756357;
+}
+
+.menu-logo {
+  width: 140px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -70px;        /*Половина ширины блока картинки (140-70)*/
+  top: 0;
+}
+
+                                /*тело сайта*/
+.slide {
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.slide1 {
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  margin: 61px 0 29px 0;
+}
+
+.slide2 {
+  text-align: center;
+  font-size: 14px;
+  color: #333333;
+  margin-bottom: 56px;
+}
