@@ -5,11 +5,151 @@
     <title>City of Sedona - отдых мечты</title>
     <meta name="description" content="Город Седона - лучшее место для отдыха">
     <meta name="keywords" content="Отдых в городе Седона,  City of Sedons, отдых, туризм, отели, красивые места, каньоны">
-    <link rel="stylesheet" href="css/normalize.css">
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/favicon-32x32.png">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
   </head>
   <body>
+                <!-- ШАПКА САЙТА НАЧАЛО-->
+    <div class="wrapper">
+      <header class="main-header">
+        <nav class="main-nav">
+          <ul class="main-list">
+            <li><a class="main-click" href="#">Информация</a></li>
+            <li><a class="main-click" href="#">Фото и видео</a></li>
+            <li><a class="main-click" href="#">Карта штата</a></li>
+            <li><a class="main-click" href="hotels.html">Гостиницы</a></li>
+          </ul>
+            <a href="index.html">
+              <img src="img/logo.png" alt="Логотип City of Sedona" width="140" height="72">
+            </a>
+        </nav>
+      </header>
+                <!-- ШАПКА САЙТА КОНЕЦ-->
+                <!-- ТЕЛО САЙТА НАЧАЛО-->
+      <main>
+                <!-- ФИЛЬТР НАЧАЛО-->
+        <section class="filter">
+          <form action="#" class="filter-list" method="get">
+            <p class="filter-text">Инфраструктура:</p>
+            <input type="checkbox" name="filter-infrastructure" id="bassein">
+            <label for="bassein">Бассейн</label>
+            <input type="checkbox" name="filter-infrastructure" id="parking">
+            <label for="parking">Парковка</label>
+            <input type="checkbox" name="filter-infrastructure" id="wifi">
+            <label for="wifi">Wi-Fi</label>
+          </form>
+          <form action="#" class="filter-list" method="get">
+            <p class="filter-text">Тип жилья:</p>
+            <input type="checkbox" name="filter-home" id="hotel">
+            <label for="hotel"> Гостиница </label>
+            <input type="checkbox" name="filter-home" id="motel">
+            <label for="motel"> Мотель </label>
+            <input type="checkbox" name="filter-home" id="apartment">
+            <label for="apartment">Аппартаменты</label>
+          </form>
+                <!-- Ползунок -->
+          <!-- <form action="#" class="slider" oninput="daysoutput.value=dayscount.value">
+            <p>Стоимость в сутки (Р):</p>
+            <label for="slidecount">Количество дней</label>
+            <input type="range" id="slidecount" name="dayscount" min="0" max="3000" step="100">
+            <output name="slidecountoutput"></output>
+          </form> -->
+                <!-- ФИЛЬТР КОНЕЦ-->
+        </section>
+
+                <!-- СОРТИРОВКА САЙТА НАЧАЛО-->
+        <section class="sort">
+          <h2>Найдено: 3</h2>
+          <p>Сортировка:</p>
+          <ul class="price">
+            <li> <a href="#">По цене</a> </li>
+            <li> <a href="#">По типу</a> </li>
+            <li> <a href="#">По рейтингу</a> </li>
+          </ul>
+          <ul class="sort-control">
+            <li> <a href="#" class="up"></a> </li>
+            <li> <a href="#" class="down"></a> </li>
+          </ul>
+        </section>
+                <!-- СОРТИРОВКА САЙТА КОНЕЦ-->
+
+                <!-- ВЫВОД САЙТА НАЧАЛО -->
+        <section class="content1">
+          <img src="" alt="" class="pic">
+            <div class="content-text">
+              <a href="#">Amara Resort & Spa</a>
+                <p>Гостиница</p>
+                <p>От 4000 Р.</p>
+            </div>
+            <div class="content-buttom">
+              <a href="#">Подробнее</a>
+              <input type="button" value="ЗАБРОНИРОВАТЬ">
+            </div>
+            <div class="starts">
+              <span class="starts-pic"></span>
+              <span class="starts-pic"></span>
+              <span class="starts-pic"></span>
+              <span class="starts-pic"></span>
+              <p>Рейтинг: 8,5</p>
+            </div>
+        </section>
+        <section class="content2">
+          <img src="" alt="" class="pic">
+            <div class="content-text">
+              <a href="#">Desert Quail Inn</a>
+                <p>Мотель</p>
+                <p>От 3000 Р.</p>
+            </div>
+            <div class="content-buttom">
+              <a href="#">Подробнее</a>
+              <input type="button" value="ЗАБРОНИРОВАТЬ">
+            </div>
+            <div class="starts">
+              <span class="starts-pic"></span>
+              <span class="starts-pic"></span>
+              <span class="starts-pic"></span>
+              <p>Рейтинг: 8,9</p>
+            </div>
+        </section>
+        <section class="content3">
+          <img src="" alt="" class="pic">
+            <div class="content-text">
+              <a href="#">Villas at Poco Diablo</a>
+                 <p>Апартаменты</p>
+                 <p>От 2000 Р.</p>
+            </div>
+            <div class="content-buttom">
+              <a href="#">Подробнее</a>
+              <input type="button" value="ЗАБРОНИРОВАТЬ">
+            </div>
+            <div class="starts">
+              <span class="starts-pic"></span>
+              <span class="starts-pic"></span>
+              <p>Рейтинг: 9,2</p>
+            </div>
+        </section>
+                <!-- ВЫВОД САЙТА КОНЕЦ-->
+      </main>
+                <!-- ТЕЛО САЙТА КОНЕЦ-->
+
+                <!-- ПОДВАЛ САЙТА НАЧАЛО-->
+      <footer class="main-footer">
+        <p class="footer-hashtag">#visitSEDONA</p>
+        <div class="footer-social">
+          <ul>
+            <li><a class="social-button" href="#">Вконтакте</a></li>
+              <li><a class="social-button" href="#">Фейсбук</a></li>
+              <li><a class="social-button" href="#">Инстаграм</a></li>
+          </ul>
+        </div>
+          <p class="footer-copyright">
+            <b>Website by</b>
+              <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+          </p>
+      </footer>
+                <!-- ПОДВАЛ САЙТА КОНЕЦ-->
+    </div>
   </body>
 </html>

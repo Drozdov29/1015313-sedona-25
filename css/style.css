@@ -4,7 +4,7 @@ body {
   width: 100%;
   background-color: #f2f2f2;
   font-family: "PT Sans", "Arial", sans-serif;
-  display: block;
+
 }
 
                                   /*ШАПКА САЙТА*/
@@ -13,26 +13,24 @@ body {
   width: 1200px;
   margin: 0 auto;
   box-shadow: 0 0 30px 5px rgba(50, 50, 50, .2); /*0-Ось Х, 0-Ось У, 15px- Размытие тени, 5px- Толщина тени, rgba- Цвет тени */
-
-  display: table;
 }
 
-.menu {
+.main-header {
+  display:  block;
   text-align: center;
   background-color: #fff;
 }
 
-.menu-list {
+.main-list {
   margin: 0;          /*НЕ РАЗОБРАЛСЯ ОТКУДА БЕРУТСЯ ОТСТУПЫ ПО 16 (верх и низ)*/
   padding: 20px 0;
 }
 
-.menu-tema {
+.main-list li {
   display: inline;          /*Из вертикально списка в горизонтальный*/
-  width: 240px;
 }
 
-.menu-click {
+.main-click {
   text-decoration: none;         /*Убирает подчеркивание*/
   text-transform: uppercase;     /*С большой буквы*/
   font-weight: bold;             /*Толщина шрифта*/
@@ -40,29 +38,31 @@ body {
   color: #000;
 
   display: inline-block;
-  width: 20%;
+
   vertical-align: top;
 }
 
 .left {
   text-align: left;     /*Прижал меню к левому краю*/
+  margin-left: 72px;
 }
 
 .right {
   text-align: right;    /*Прижал меню к правому краю*/
+  margin-right: 72px;
 }
 
-.menu-click:hover {             /*НАВЕДЕНИЕ на ссылку меняет цвет*/
+.main-click:hover {             /*НАВЕДЕНИЕ на ссылку меняет цвет*/
   color: #7fb4d3;
 }
-.menu-click:visited {             /*НАЖАТИЕ на ссылку меняет цвет*/
+.main-click:visited {             /*НАЖАТИЕ на ссылку меняет цвет*/
   color: #dadada;
 }
-.menu-click:ACTIVE {             /*АКТИВНАЯ ссылкА меняет цвет*/
+.main-click:ACTIVE {             /*АКТИВНАЯ ссылкА меняет цвет*/
   color: #756357;
 }
 
-.menu-logo {
+.main-nav a img{
   width: 140px;
   display: block;
   position: absolute;
@@ -72,6 +72,7 @@ body {
 }
 
                                 /*тело сайта*/
+                                /*Приветсткие*/
 .slide {
   background-repeat: no-repeat;
   width: 100%;
@@ -80,15 +81,125 @@ body {
 }
 
 .slide1 {
+  color: #000;
+  line-height: 26px;        /*интерлиньяж (межстрочный интервал) текста*/
   font-size: 21px;
   font-weight: bold;
-  text-align: center;
   margin: 61px 0 29px 0;
 }
 
 .slide2 {
-  text-align: center;
   font-size: 14px;
   color: #333333;
   margin-bottom: 56px;
 }
+
+.text {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+                                  /*Секция 1 - 3*/
+
+.sector1,
+.sector3 {
+  box-sizing: border-box;
+  width: 100%;
+  height: 256px;
+}
+
+.home,
+.mountains {
+  width: 400px;
+  background-color: #81b3d2;
+  float: left;
+  text-align: center;
+  line-height: 21px;
+}
+
+.home h2,
+.mountains h2{
+  font-size: 21px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 50px;
+}
+
+.home p,
+.mountains p {
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.home p:last-of-type,
+.mountains p:last-of-type  {
+  margin-bottom: 69px;
+}
+
+                                  /*Секция 2 - 4 */
+
+.sector2,
+.sector4 {
+    box-sizing: border-box;
+    width: 100%;
+    height: 330px;
+}
+
+
+.kol1,
+.kol2,
+.kol3,
+.kol4,
+.kol5,
+.kol6 {
+  width: 400px;
+  height: 330px;
+  background-color: #ffffff;
+  float: left;
+  text-align: center;
+}
+
+.pic_home {
+ margin-top: 60px;
+}
+.pic_eat {
+ margin-top: 61px;
+}
+.pic_surprice {
+ margin-top: 56px;
+}
+
+.sector2 h,
+.sector4 h{
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 21px;
+  margin-top: 32px;
+}
+
+.sector2 p,
+.sector4 p {
+  text-transform: uppercase;
+  line-height: 21px;
+  margin-bottom: 86px;
+  color: #363636;
+}
+
+                                  /*Секция 3*/
+
+
+
+.pic_mountains {
+  float: left;
+}
+
+.mountains {
+  height: 256px;
+  width: 400px;
+  background-color: #90b2d0;
+  float: right;
+  text-align: center;
+  line-height: 21px;
+}
+
+                                  /*Секция 4*/
