@@ -11,26 +11,24 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
   </head>
   <body>
-                <!-- ШАПКА САЙТА НАЧАЛО-->
-    <div class="wrapper">
-      <header class="main-header">
-        <nav class="main-nav">
-          <ul class="main-list">
-            <li><a class="main-click" href="#">Информация</a></li>
-            <li><a class="main-click" href="#">Фото и видео</a></li>
-            <li><a class="main-click" href="#">Карта штата</a></li>
-            <li><a class="main-click" href="hotels.html">Гостиницы</a></li>
+    <div class="wrapper">                    <!-- ОБОЛОЧКА САЙТА НАЧАЛО-->
+      <header class="menu-header">           <!-- ШАПКА САЙТА НАЧАЛО-->
+        <nav class="menu-nav">
+          <ul class="menu-list">
+            <li><a class="menu-click" href="#">Информация</a></li>
+            <li><a class="menu-click" href="#">Фото и видео</a></li>
+            <li><a class="menu-click" href="#">Карта штата</a></li>
+            <li><a class="menu-click" href="hotels.html">Гостиницы</a></li>
           </ul>
             <a href="index.html">
               <img src="img/logo.png" alt="Логотип City of Sedona" width="140" height="72">
             </a>
         </nav>
-      </header>
-                <!-- ШАПКА САЙТА КОНЕЦ-->
-                <!-- ТЕЛО САЙТА НАЧАЛО-->
-      <main>
-                <!-- ФИЛЬТР НАЧАЛО-->
-        <section class="filter">
+      </header>                              <!-- ШАПКА САЙТА КОНЕЦ-->
+      <main>                                 <!-- ТЕЛО САЙТА НАЧАЛО-->
+          <h1 class="hidden">Поиск гостиниц в городе Седона</h1>
+        <section class="filter">             <!-- ФИЛЬТР НАЧАЛО-->
+          <h2 class="hidden">Параметры</h2>
           <form action="#" class="filter-list" method="get">
             <p class="filter-text">Инфраструктура:</p>
             <input type="checkbox" name="filter-infrastructure" id="bassein">
@@ -56,100 +54,106 @@
             <input type="range" id="slidecount" name="dayscount" min="0" max="3000" step="100">
             <output name="slidecountoutput"></output>
           </form> -->
-                <!-- ФИЛЬТР КОНЕЦ-->
-        </section>
-
-                <!-- СОРТИРОВКА САЙТА НАЧАЛО-->
-        <section class="sort">
-          <h2>Найдено: 3</h2>
+        </section>                           <!-- ФИЛЬТР КОНЕЦ-->
+        <section class="sort">               <!-- СОРТИРОВКА САЙТА НАЧАЛО-->
+          <h2 class="hidden">Сортирование по параметрам</h2>
+          <h3>Найдено: 3</h3>
           <p>Сортировка:</p>
           <ul class="price">
-            <li> <a href="#">По цене</a> </li>
-            <li> <a href="#">По типу</a> </li>
-            <li> <a href="#">По рейтингу</a> </li>
+            <li><a href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По рейтингу</a></li>
           </ul>
           <ul class="sort-control">
-            <li> <a href="#" class="up"></a> </li>
-            <li> <a href="#" class="down"></a> </li>
+            <li><a href="#" class="up"></a></li>
+            <li><a href="#" class="down"></a></li>
           </ul>
-        </section>
-                <!-- СОРТИРОВКА САЙТА КОНЕЦ-->
-
-                <!-- ВЫВОД САЙТА НАЧАЛО -->
-        <section class="content1">
-          <img src="" alt="" class="pic">
-            <div class="content-text">
-              <a href="#">Amara Resort & Spa</a>
-                <p>Гостиница</p>
-                <p>От 4000 Р.</p>
+        </section>                           <!-- СОРТИРОВКА САЙТА КОНЕЦ-->
+        <section class="content">            <!-- ВЫВОД САЙТА НАЧАЛО -->
+          <h2 class="hidden">Вывод результатов</h2>
+          <div class="content-one">
+            <div class="content-one-pic">
+              <img src="#" alt="" class="pic">
             </div>
-            <div class="content-buttom">
-              <a href="#">Подробнее</a>
-              <input type="button" value="ЗАБРОНИРОВАТЬ">
-            </div>
-            <div class="starts">
-              <span class="starts-pic"></span>
-              <span class="starts-pic"></span>
-              <span class="starts-pic"></span>
-              <span class="starts-pic"></span>
-              <p>Рейтинг: 8,5</p>
-            </div>
-        </section>
-        <section class="content2">
-          <img src="" alt="" class="pic">
-            <div class="content-text">
-              <a href="#">Desert Quail Inn</a>
-                <p>Мотель</p>
-                <p>От 3000 Р.</p>
-            </div>
-            <div class="content-buttom">
-              <a href="#">Подробнее</a>
-              <input type="button" value="ЗАБРОНИРОВАТЬ">
+            <div class="content-text-one">
+                <h3><a href="#">Amara Resort & Spa</a></h3>
+                <div class="content-text-left">
+                  <p>Гостиница</p>
+                  <a href="#">Подробнее</a>
+                </div>
+                <div class="content-text-right">
+                  <p>От 4000 Р.</p>
+                  <a href="#">Забронировать</a>
+                </div>
             </div>
             <div class="starts">
-              <span class="starts-pic"></span>
-              <span class="starts-pic"></span>
-              <span class="starts-pic"></span>
-              <p>Рейтинг: 8,9</p>
+              <div class="starts-pic"></div>
+              <div class="starts-pic"></div>
+              <div class="starts-pic"></div>
+              <div class="starts-pic"></div>
+              <p class="rating">Рейтинг: 8&#44;5</p>
             </div>
-        </section>
-        <section class="content3">
-          <img src="" alt="" class="pic">
-            <div class="content-text">
-              <a href="#">Villas at Poco Diablo</a>
-                 <p>Апартаменты</p>
-                 <p>От 2000 Р.</p>
+          </div>
+          <div class="content-two">
+            <div class="content-one-pic">
+              <img src="#" alt="" class="pic">
             </div>
-            <div class="content-buttom">
-              <a href="#">Подробнее</a>
-              <input type="button" value="ЗАБРОНИРОВАТЬ">
+            <div class="content-text-two">
+                <h3><a href="#">Desert Quail Inn</a></h3>
+                <div class="content-text-left">
+                  <p>Мотель</p>
+                  <a href="#">Подробнее</a>
+                </div>
+                <div class="content-text-right">
+                  <p>От 3000 Р.</p>
+                  <a href="#">Забронировать</a>
+                </div>
             </div>
             <div class="starts">
-              <span class="starts-pic"></span>
-              <span class="starts-pic"></span>
-              <p>Рейтинг: 9,2</p>
+                <div class="starts-pic"></div>
+                <div class="starts-pic"></div>
+                <div class="starts-pic"></div>
+                <p class="rating">Рейтинг: 8&#44;9</p>
+              </div>
+          </div>
+          <div class="content-three">
+            <div class="content-one-pic">
+              <img src="#" alt="" class="pic">
             </div>
-        </section>
-                <!-- ВЫВОД САЙТА КОНЕЦ-->
-      </main>
-                <!-- ТЕЛО САЙТА КОНЕЦ-->
-
-                <!-- ПОДВАЛ САЙТА НАЧАЛО-->
-      <footer class="main-footer">
-        <p class="footer-hashtag">#visitSEDONA</p>
+            <div class="content-text-three">
+              <h3><a href="#">Villas at Poco Diablo</a></h3>
+                <div class="content-text-left">
+                  <p>Апартаменты</p>
+                  <a href="#">Подробнее</a>
+                </div>
+                <div class="content-text-right">
+                  <p>От 2000 Р.</p>
+                  <a href="#">Забронировать</a>
+                </div>
+            </div>
+            <div class="starts">
+                <div class="starts-pic"></div>
+                <div class="starts-pic"></div>
+                <p class="rating">Рейтинг: 9&#44;2</p>
+            </div>
+          </div>
+        </section>                           <!-- ВЫВОД САЙТА КОНЕЦ-->
+      </main>                                <!-- ТЕЛО САЙТА КОНЕЦ-->
+      <footer class="footer">                <!-- ПОДВАЛ САЙТА НАЧАЛО-->
+        <h2 class="hidden">Наши контакты в соц. сетях</h2>
+        <p class="footer-hashtag">&#35;visitSEDONA</p>
         <div class="footer-social">
           <ul>
-            <li><a class="social-button" href="#">Вконтакте</a></li>
-              <li><a class="social-button" href="#">Фейсбук</a></li>
-              <li><a class="social-button" href="#">Инстаграм</a></li>
+            <li><a class="social-button" href="https://vk.com/htmlacademy">Вконтакте</a></li>
+            <li><a class="social-button" href="#">Фейсбук</a></li>
+            <li><a class="social-button" href="https://www.instagram.com/htmlacademy/">Инстаграм</a></li>
           </ul>
         </div>
           <p class="footer-copyright">
             <b>Website by</b>
               <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
           </p>
-      </footer>
-                <!-- ПОДВАЛ САЙТА КОНЕЦ-->
-    </div>
+      </footer>                               <!-- ПОДВАЛ САЙТА КОНЕЦ-->
+    </div>                                   <!-- ОБОЛОЧКА САЙТА КОНЕЦ-->
   </body>
 </html>
