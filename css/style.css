@@ -4,17 +4,16 @@ body {
   width: 100%;
   background-color: #f2f2f2;
   font-family: "PT Sans", "Arial", sans-serif;
-
-/* }
-
+}
                                   /*ШАПКА САЙТА*/
 .wrapper {
-  min-width: 760px;
   width: 1200px;
   margin: 0 auto;
   box-shadow: 0 0 30px 5px rgba(50, 50, 50, .2); /*0-Ось Х, 0-Ось У, 15px- Размытие тени, 5px- Толщина тени, rgba- Цвет тени */
 }
-
+.advantage-head {
+  background: url(img/index/background photo.jpg);
+}
 .main-header {
   display:  block;
   text-align: center;
@@ -70,6 +69,7 @@ body {
   margin-left: -70px;        /*Половина ширины блока картинки (140-70)*/
   top: 0;
 }
+/*
 
                                 /*тело сайта*/
                                 /*Приветсткие*/
