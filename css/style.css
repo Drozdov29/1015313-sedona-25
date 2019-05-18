@@ -1,205 +1,56 @@
-body {
+* {
   margin: 0;
   padding: 0;
-  width: 100%;
-  background-color: #f2f2f2;
-  font-family: "PT Sans", "Arial", sans-serif;
 }
-                                  /*ШАПКА САЙТА*/
+body {
+  width: 100%;
+
+  font-family: "PT Sans", "Arial", sans-serif;
+
+  background-color: #f2f2f2;
+
+  text-transform: uppercase;
+}
 .wrapper {
   width: 1200px;
   margin: 0 auto;
-  box-shadow: 0 0 30px 5px rgba(50, 50, 50, .2); /*0-Ось Х, 0-Ось У, 15px- Размытие тени, 5px- Толщина тени, rgba- Цвет тени */
-}
-.advantage-head {
-  background: url(img/index/background photo.jpg);
-}
-.main-header {
-  display:  block;
-  text-align: center;
-  background-color: #fff;
+
+  box-shadow:  0 5px 15px rgba(0, 1, 1, 0.20); /*0-Ось Х-смещение, 0-Ось У-смещение, 5px- Размытие тени, 15px- Толщина тени, rgba- Цвет тени */
 }
 
-.main-list {
-  margin: 0;          /*НЕ РАЗОБРАЛСЯ ОТКУДА БЕРУТСЯ ОТСТУПЫ ПО 16 (верх и низ)*/
-  padding: 20px 0;
+.menu-nav {
+  position: relative;
+
+  font-weight: 700;
+  background-color: #ffffff;
 }
 
-.main-list li {
-  display: inline;          /*Из вертикально списка в горизонтальный*/
-}
-
-.main-click {
-  text-decoration: none;         /*Убирает подчеркивание*/
-  text-transform: uppercase;     /*С большой буквы*/
-  font-weight: bold;             /*Толщина шрифта*/
-  font-size: 14px;
-  color: #000;
-
-  display: inline-block;
-
-  vertical-align: top;
-}
-
-.left {
-  text-align: left;     /*Прижал меню к левому краю*/
-  margin-left: 72px;
-}
-
-.right {
-  text-align: right;    /*Прижал меню к правому краю*/
-  margin-right: 72px;
-}
-
-.main-click:hover {             /*НАВЕДЕНИЕ на ссылку меняет цвет*/
-  color: #7fb4d3;
-}
-.main-click:visited {             /*НАЖАТИЕ на ссылку меняет цвет*/
-  color: #dadada;
-}
-.main-click:ACTIVE {             /*АКТИВНАЯ ссылкА меняет цвет*/
-  color: #756357;
-}
-
-.main-nav a img{
-  width: 140px;
-  display: block;
+.menu-nav a img{
   position: absolute;
   left: 50%;
-  margin-left: -70px;        /*Половина ширины блока картинки (140-70)*/
   top: 0;
-}
-/*
-
-                                /*тело сайта*/
-                                /*Приветсткие*/
-.slide {
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  top: 0;
+  transform: translateX(-50%);
 }
 
-.slide1 {
-  color: #000;
-  line-height: 26px;        /*интерлиньяж (межстрочный интервал) текста*/
-  font-size: 21px;
-  font-weight: bold;
-  margin: 61px 0 29px 0;
+.menu-list {
+  list-style: none;
+  height: 56px;
+}
+.menu-list li {
+  display: inline-block;
 }
 
-.slide2 {
-  font-size: 14px;
-  color: #333333;
-  margin-bottom: 56px;
+.menu-click {
+  text-decoration: none;
+  color: #000000;
 }
 
-.text {
-  text-align: center;
-  text-transform: uppercase;
+.menu-click:hover {             /*НАВЕДЕНИЕ на ссылку меняет цвет*/
+  color: #81b3d2;
 }
-
-                                  /*Секция 1 - 3*/
-
-.sector1,
-.sector3 {
-  box-sizing: border-box;
-  width: 100%;
-  height: 256px;
+.menu-click:visited {           /*НАЖАТИЕ на ссылку меняет цвет*/
+  color: #dadada;
 }
-
-.home,
-.mountains {
-  width: 400px;
-  background-color: #81b3d2;
-  float: left;
-  text-align: center;
-  line-height: 21px;
+.menu-click:active {            /*АКТИВНАЯ ссылка меняет цвет*/
+  color: rgba(0, 0, 0, 0.302);
 }
-
-.home h2,
-.mountains h2{
-  font-size: 21px;
-  font-weight: bold;
-  color: #ffffff;
-  margin-top: 50px;
-}
-
-.home p,
-.mountains p {
-  font-size: 14px;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-.home p:last-of-type,
-.mountains p:last-of-type  {
-  margin-bottom: 69px;
-}
-
-                                  /*Секция 2 - 4 */
-
-.sector2,
-.sector4 {
-    box-sizing: border-box;
-    width: 100%;
-    height: 330px;
-}
-
-
-.kol1,
-.kol2,
-.kol3,
-.kol4,
-.kol5,
-.kol6 {
-  width: 400px;
-  height: 330px;
-  background-color: #ffffff;
-  float: left;
-  text-align: center;
-}
-
-.pic_home {
- margin-top: 60px;
-}
-.pic_eat {
- margin-top: 61px;
-}
-.pic_surprice {
- margin-top: 56px;
-}
-
-.sector2 h,
-.sector4 h{
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 21px;
-  margin-top: 32px;
-}
-
-.sector2 p,
-.sector4 p {
-  text-transform: uppercase;
-  line-height: 21px;
-  margin-bottom: 86px;
-  color: #363636;
-}
-
-                                  /*Секция 3*/
-
-
-
-.pic_mountains {
-  float: left;
-}
-
-.mountains {
-  height: 256px;
-  width: 400px;
-  background-color: #90b2d0;
-  float: right;
-  text-align: center;
-  line-height: 21px;
-}
-
-                                  /*Секция 4*/ */
