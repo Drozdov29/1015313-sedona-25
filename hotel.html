@@ -28,10 +28,10 @@
       <main>                                 <!-- ТЕЛО САЙТА НАЧАЛО-->
         <h1 class="visually-hidden">Поиск гостиниц в городе Седона</h1>
         <section class="filter">             <!-- ФИЛЬТР НАЧАЛО-->
-          <h2 class="visually-hidden">Параметры</h2>
+          <h2 class="visually-hidden">Фильтр по параметрам</h2>
           <form class="filter-list" action="https://echo.htmlacademy.ru" method="post">
             <fieldset>
-              <p class="filter-text">Инфраструктура&#58;</p>
+              <legend class="filter-text">Инфраструктура&#58;</legend>
               <input type="checkbox" name="infrastructure-bassein" id="infrastructure-bassein" checked>
               <label for="infrastructure-bassein">Бассейн</label>
               <input type="checkbox" name="infrastructure-parking" id="infrastructure-parking">
@@ -40,7 +40,7 @@
               <label for="infrastructure-wifi">Wi-Fi</label>
             </fieldset>
             <fieldset>
-              <p class="filter-text">Тип жилья&#58;</p>
+              <legend class="filter-text">Тип жилья&#58;</legend>
               <input type="checkbox" name="type-housing-hotel" id="type-housing-hotel" checked>
               <label for="type-housing-hotel">Гостиница</label>
               <input type="checkbox" name="type-housing-motel" id="type-housing-motel" checked>
@@ -49,16 +49,13 @@
               <label for="type-housing-apartment">Аппартаменты</label>
             </fieldset>
             <fieldset>
+              <legend class="filter-text">Стоимость в сутки (Р)&#58;</legend>
               <!-- Ползунок -->
-              <!-- <form action="#" class="slider" oninput="daysoutput.value=dayscount.value">
-              <p>Стоимость в сутки (Р):</p>
-              <label for="slidecount">Количество дней</label>
-              <input type="range" id="slidecount" name="dayscount" min="0" max="3000" step="100">
-              <output name="slidecountoutput"></output>
-                </fieldset>
+              <!--
+
               -->
             </fieldset>
-            <button type="submit" name="">показать</button>
+            <button type="submit" name="button-show">показать</button>
           </form>
         </section>                           <!-- ФИЛЬТР КОНЕЦ-->
         <section class="sort">               <!-- СОРТИРОВКА САЙТА НАЧАЛО-->
@@ -71,12 +68,12 @@
             <li><a href="#">По рейтингу</a></li>
           </ul>
           <ul class="sort-control">
-            <li><a href="#" class="up"></a></li>
-            <li><a href="#" class="down"></a></li>
+            <li><a href="#" class="up" aria-label="Сортировка параметров по возрастанию"></a></li>
+            <li><a href="#" class="down" aria-label="Сортировка параметров по убыванию"></a></li>
           </ul>
         </section>                           <!-- СОРТИРОВКА САЙТА КОНЕЦ-->
         <section class="content">            <!-- ВЫВОД САЙТА НАЧАЛО -->
-          <h2 class="visually-hidden">Вывод результатов</h2>
+          <h2 class="visually-hidden">Список результатов</h2>
           <article class="catalog-item">
             <div class="content-pic">
               <img class="pic" src="img/hotels/hotel.jpg" alt="Фото гостиницы Amara Resort & Spa" width="135" height="90">
@@ -97,7 +94,7 @@
                 <div class="stars-pic"></div>
                 <div class="stars-pic"></div>
               </div>
-              <p class="rating">Рейтинг: 8&#44;5</p>
+              <p class="rating">Рейтинг:8&#44;5</p>
             </div>
           </article>
           <article class="catalog-item">
@@ -149,9 +146,9 @@
         </section>                         <!-- ВЫВОД САЙТА КОНЕЦ-->
       </main>                                <!-- ТЕЛО САЙТА КОНЕЦ-->
       <footer class="footer">                <!-- ПОДВАЛ САЙТА НАЧАЛО-->
-        <h2 class="visually-hidden">Наши контакты в соц. сетях</h2>
+        <h2 class="visually-hidden">Контактная информация</h2>
         <p class="footer-hashtag">&#35;visitSEDONA</p>
-        <ul class="footer-social" aria-label="Содержимое социального меню">
+        <ul class="footer-social">
           <li><a class="social-button" href="https://vk.com/htmlacademy">Вконтакте</a></li>
           <li><a class="social-button" href="https://www.facebook.com/htmlacademy">Фейсбук</a></li>
           <li><a class="social-button" href="https://www.instagram.com/htmlacademy/">Инстаграм</a></li>
