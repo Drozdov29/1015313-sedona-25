@@ -5,7 +5,8 @@
     <title>City of Sedona - отдых мечты</title>
     <meta name="description" content="Город Седона - лучшее место для отдыха">
     <meta name="keywords" content="Отдых в городе Седона,  City of Sedons, отдых, туризм, отели, красивые места, каньоны">
-    <!--<link rel="stylesheet" href="css/normalize.css">-->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/favicon-32x32.png">
   </head>
@@ -26,9 +27,12 @@
       </header>                             <!-- ШАПКА САЙТА КОНЕЦ-->
       <main>                                <!-- ТЕЛО САЙТА НАЧАЛО-->
         <section class="advantage-head">    <!-- ПРЕИМУЩЕСТВО-->
-          <h1 class="visually-hidden"><span>Седона&ndash;город для отдыха</span><img src="img/index/welcome.svg" alt="Надпись на фото Welcome Седона" width="459" height="353"></h1>    <!-- СКРЫТЬ ЗАГОЛОВОК-->
-          <b>Седона&ndash;небольшой городок в Аризоне, заслуживающий большего!</b>
-          <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          <h1 class="visually-hidden">Седона&ndash;город для отдыха</h1>    <!-- СКРЫТЬ ЗАГОЛОВОК-->
+          <img src="img/index/welcome.svg" alt="Надпись на фото Welcome Седона" width="459" height="353">
+          <div class="advantage-head-text">
+            <b>Седона&ndash;небольшой городок в Аризоне, заслуживающий большего!</b>
+            <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          </div>
         </section>
         <section class="advantages">
           <h2 class="visually-hidden">Преимущества города Седоны</h2>
@@ -49,11 +53,11 @@
         		</div>
         		<div class="advantage-subitem gray">
         			<b class="icon-eat">Еда</b> <!-- Фон иконки на класс icon-eat-->
-        			<p>Всегда заказывайте фирменный бургер,вы не разочаруетесь!</p>
+        			<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         		</div>
         		<div class="advantage-subitem gray">
-        			<b class="icon-surprice">Еда</b>  <!-- Фон иконки на класс icon-surprice-->
-        			<p>Всегда заказывайте фирменный бургер,вы не разочаруетесь!</p>
+        			<b class="icon-surprice">Сувениры</b>  <!-- Фон иконки на класс icon-surprice-->
+        			<p>Не только китайского, но и местного производства!</p>
         		</div>
         	</div>
         	<div class="advantage-wrap">
@@ -90,16 +94,16 @@
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <form class="hotel-search" action="https://echo.htmlacademy.ru" method="post">
             <div class="search">
-              <a href="">ПОИСК ГОСТИНИЦЫ В седоне</a>
+              <a class="search-button-hotel" href="">ПОИСК ГОСТИНИЦЫ В седоне</a>
               <div class="find-wrapper">
                 <p class="data-arrival-text">
                   <label for="data-arrival">Дата заезда</label>
-                  <input type="text" name="data-arrival" id="data-arrival" value="24 АПРЕЛЯ 2017">
+                  <input type="text" name="data-arrival" id="data-arrival" placeholder="24 АПРЕЛЯ 2017">
                   <a href="" class="pic-calendar"></a>
                 </p>
                 <p class="data-departure-text">
                   <label for="data-departure">Дата выезда</label>
-                  <input type="text" name="data-departure" id="data-departure" value="4 ИЮЛЯ 2017">
+                  <input type="text" name="data-departure" id="data-departure" placeholder="4 ИЮЛЯ 2017">
                   <a href="" class="pic-calendar"></a>
                 </p>
                 <div class="humans">
@@ -118,7 +122,7 @@
                 </div>
               </div>
             </div>
-            <button type="submit" name="button-find">Найти</button>
+            <button class="search-button" type="submit" name="button-find">Найти</button>
           </form>
         </section>
         <section class="map">
@@ -131,12 +135,12 @@
         <h2 class="visually-hidden">Контактная информация</h2>
         <p class="footer-hashtag">&#35;visitSEDONA</p>
         <ul class="footer-social">
-          <li><a class="social-button" href="https://vk.com/htmlacademy"><span class="visually-hidden">Вконтакте</span></a></li>
-          <li><a class="social-button" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Фейсбук</span></a></li>
-          <li><a class="social-button" href="https://www.instagram.com/htmlacademy/"><span class="visually-hidden">Инстаграм</span></a></li>
+          <li><a class="social-button-twitter square" href="https://twitter.com/htmlacademy_ru"><span class="visually-hidden">Твиттер</span></a></li>
+          <li><a class="social-button-f square" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li><a class="social-button-youtube square" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Ютуб</span></a></li>
         </ul>
         <p class="footer-copyright">
-          <a class="button" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Профессиональный онлайн‑курс HTML и CSS, уровень 1">Website by<span class="htmlacademy-logo"></span></a>
+          <a class="button-copyright" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Профессиональный онлайн‑курс HTML и CSS, уровень 1">Website by<span class="htmlacademy-logo"></span></a>
         </p>
       </footer>                             <!-- ПОДВАЛ САЙТА КОНЕЦ-->
     </div>                                  <!-- ОБОЛОЧКА САЙТА КОНЕЦ-->
