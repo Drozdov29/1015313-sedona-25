@@ -4,180 +4,134 @@
     <meta charset="utf-8">
     <title>City of Sedona - отдых мечты</title>
     <meta name="description" content="Город Седона - лучшее место для отдыха">
-    <meta name="keywords" content="Отдых в городе Седона, City of Sedons, отдых, туризм, отели, красивые места, каньоны">
+    <meta name="keywords" content="Отдых в городе Седона,  City of Sedons, отдых, туризм, отели, красивые места, каньоны">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/favicon-32x32.png">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
   </head>
   <body>
-    <div class="wrapper">                    <!-- ОБОЛОЧКА САЙТА НАЧАЛО-->
-      <header class="menu-header">           <!-- ШАПКА САЙТА НАЧАЛО-->
-        <nav class="menu-nav">
-          <a href="index.html">
+    <div class="wrapper">                   <!-- ОБОЛОЧКА САЙТА НАЧАЛО-->
+      <header class="menu-header">          <!-- ШАПКА САЙТА НАЧАЛО-->
+        <nav class="menu-nav" aria-label="Содержимое меню">
+          <a>
             <img src="img/logo.svg" alt="Логотип City of Sedona" width="140" height="72">
           </a>
           <ul class="menu-list">
             <li><a class="menu-click" href="#">Информация</a></li>
             <li><a class="menu-click" href="#">Фото и видео</a></li>
             <li><a class="menu-click" href="#">Карта штата</a></li>
-            <li class="menu-current"><a class="menu-click" href="hotel.html">Гостиницы</a></li>
+            <li><a class="menu-click" href="hotel.html">Гостиницы</a></li>
           </ul>
         </nav>
-      </header>                              <!-- ШАПКА САЙТА КОНЕЦ-->
-      <main>                                 <!-- ТЕЛО САЙТА НАЧАЛО-->
-        <h1 class="visually-hidden">Поиск гостиниц в городе Седона</h1>
-        <section class="filter">             <!-- ФИЛЬТР НАЧАЛО-->
-          <h2 class="visually-hidden">Фильтр по параметрам</h2>
-          <form class="filter-list" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset>
-              <legend class="filter-text">Инфраструктура&#58;</legend>
-              <ul class="filter-text-list">
-                <li>
-                  <input class="filter-input-checkbox" type="checkbox" name="infrastructure-bassein" id="infrastructure-bassein" checked>
-                  <label for="infrastructure-bassein">Бассейн</label>
-                </li>
-                <li>
-                  <input class="filter-input-checkbox" type="checkbox" name="infrastructure-parking" id="infrastructure-parking">
-                  <label for="infrastructure-parking">Парковка</label>
-                </li>
-                <li>
-                  <input class="filter-input-checkbox" type="checkbox" name="infrastructure-wifi" id="infrastructure-wifi">
-                  <label for="infrastructure-wifi">Wi-Fi</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset>
-              <legend class="filter-text">Тип жилья&#58;</legend>
-              <ul class="filter-text-list">
-                <li>
-                  <input class="filter-input-checkbox" type="checkbox" name="type-housing-hotel" id="type-housing-hotel" checked>
-                  <label for="type-housing-hotel">Гостиница</label>
-                </li>
-                <li>
-                  <input class="filter-input-checkbox" type="checkbox" name="type-housing-motel" id="type-housing-motel" checked>
-                  <label for="type-housing-motel">Мотель</label>
-                </li>
-                <li>
-                  <input class="filter-input-checkbox" type="checkbox" name="type-housing-apartment" id="type-housing-apartment" checked>
-                  <label for="type-housing-apartment">Аппартаменты</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset>
-              <legend class="filter-text">Стоимость в сутки (Р)&#58;</legend>
-                <div class="price-controls">
-                  <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-                  <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+      </header>                             <!-- ШАПКА САЙТА КОНЕЦ-->
+      <main>                                <!-- ТЕЛО САЙТА НАЧАЛО-->
+        <section class="advantage-head">    <!-- ПРЕИМУЩЕСТВО-->
+          <h1 class="visually-hidden">Седона &ndash; город для отдыха</h1>    <!-- СКРЫТЬ ЗАГОЛОВОК-->
+          <img src="img/index/welcome.svg" alt="Надпись на фото Welcome Седона" width="459" height="353">
+          <div class="advantage-head-text">
+            <b>Седона &ndash; небольшой городок в Аризоне, заслуживающий большего!</b>
+            <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          </div>
+        </section>
+        <section class="advantages">
+          <h2 class="visually-hidden">Преимущества города Седоны</h2>
+        	<div class="advantage-wrap">
+        		<div class="advantage blue">
+        			<b>Настоящий городок</b>
+        			<p>&ndash;&#8470;1&ndash;</p>
+        			<p>Седона &ndash; не аттракцион для туристов, там течёт своя жизнь</p>
+        		</div>
+        		<div class="advantage-pic">
+        			<img src="img/index/home-sedona.jpg" alt="Город Седона" width="800" height="256">
+        		</div>
+        	</div>
+        	<div class="advantage-sublist">
+        		<div class="advantage-subitem">
+        			<b class="icon-home">Жильё</b> <!-- Фон иконки на класс icon-home-->
+        			<p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+        		</div>
+        		<div class="advantage-subitem">
+        			<b class="icon-eat">Еда</b> <!-- Фон иконки на класс icon-eat-->
+        			<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+        		</div>
+        		<div class="advantage-subitem">
+        			<b class="icon-surprice">Сувениры</b>  <!-- Фон иконки на класс icon-surprice-->
+        			<p>Не только китайского, но и местного производства!</p>
+        		</div>
+        	</div>
+        	<div class="advantage-wrap">
+        		<div class="advantage-pic">
+        			<img src="img/index/most-devil.jpg" alt="Мост Дьявола" width="800" height="256">
+        		</div>
+        		<div class="advantage blue">
+        			<b>Там есть <br> мост дьявола</b>
+        			<p>&ndash;&#8470;2&ndash;</p>
+        			<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        		</div>
+        	</div>
+        	<div class="advantage-wrap">
+        		<div class="advantage gray">
+        			<b>Небольшая площадь</b>
+        			<p>&ndash;&#8470;3&ndash;</p>
+        			<p>Все достопримечательности находятся очень близко</p>
+        		</div>
+        		<div class="advantage gray">
+        			<b>Красивая дорога</b>
+        			<p>&ndash;&#8470;4&ndash;</p>
+        			<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        		</div>
+        		<div class="advantage gray">
+        			<b>Мало туристов</b>
+        			<p>&ndash;&#8470;5&ndash;</p>
+        			<p>Большинство едет в гранд каньон и толпится там</p>
+        		</div>
+        	</div>
+        </section>
+        <section class="adventage-booking"> <!-- БЛОК ДЛЯ ПОИСКА ГОСТИНИЦЫ-->
+          <h2 class="visually-hidden">Поиск отеля в городе Седона</h2>
+          <b>Заинтересовались?</b>
+          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <form class="hotel-search" action="https://echo.htmlacademy.ru" method="post">
+            <div class="search">
+              <a class="search-button-hotel" href="">ПОИСК ГОСТИНИЦЫ В седоне</a>
+              <div class="find-wrapper">
+                <p class="data-arrival-text">
+                  <label for="data-arrival">Дата заезда</label>
+                  <input type="text" name="data-arrival" id="data-arrival" placeholder="24 АПРЕЛЯ 2017">
+                  <a href="" class="pic-calendar"></a>
+                </p>
+                <p class="data-departure-text">
+                  <label for="data-departure">Дата выезда</label>
+                  <input type="text" name="data-departure" id="data-departure" placeholder="4 ИЮЛЯ 2017">
+                  <a href="" class="pic-calendar"></a>
+                </p>
+                <div class="humans">
+                  <p class="adults">
+                    <label for="adults-number">Взрослые</label>
+                    <button class="minus" type="button" name="button" aria-label="Кнопка уменьшения числа"></button>
+                    <input type="text" name="adults-number" id="adults-number" value="2">
+                    <button class="plus" type="button" name="button" aria-label="Кнопка увеличения числа"></button>
+                  </p>
+                  <p class="children">
+                    <label for="children-number">Дети</label>
+                    <button class="minus" type="button" name="button" aria-label="Кнопка уменьшения числа"></button>
+                    <input type="text" name="children-number" id="children-number" value="0">
+                    <button class="plus" type="button" name="button" aria-label="Кнопка увеличения числа"></button>
+                  </p>
                 </div>
-                <div class="range-controls">
-                  <div class="scale">
-                    <div class="bar"></div>
-                  </div>
-                  <div class="range-toggle range-toggle-min"></div>
-                  <div class="range-toggle range-toggle-max"></div>
-                </div>
-                <button class="btn-transparent" type="submit" name="button-show">Показать</button>
-            </fieldset>
+              </div>
+            </div>
+            <button class="search-button" type="submit" name="button-find">Найти</button>
           </form>
-        </section>                           <!-- ФИЛЬТР КОНЕЦ-->
-        <section class="sort">               <!-- СОРТИРОВКА САЙТА НАЧАЛО-->
-          <h2 class="visually-hidden">Сортирование по параметрам</h2>
-          <h3>Найдено: 3</h3>
-          <p>Сортировка:</p>
-          <ul class="price">
-            <li><a class="price-search" href="#">По цене</a></li>
-            <li><a class="type-search" href="#">По типу</a></li>
-            <li><a class="rating-search" href="#">По рейтингу</a></li>
-          </ul>
-          <ul class="sort-control">
-            <li><a href="#" class="up" aria-label="Сортировка параметров по возрастанию"></a></li>
-            <li><a href="#" class="down" aria-label="Сортировка параметров по убыванию"></a></li>
-          </ul>
-        </section>                           <!-- СОРТИРОВКА САЙТА КОНЕЦ-->
-        <section class="content">            <!-- ВЫВОД САЙТА НАЧАЛО -->
-          <h2 class="visually-hidden">Список результатов</h2>
-          <article class="catalog-item">
-            <div class="content-pic">
-              <img class="pic" src="img/hotels/hotel.jpg" alt="Фото гостиницы Amara Resort & Spa" width="135" height="90">
-            </div>
-            <div class="content-text-wrap">
-              <h3><a href="#">Amara Resort & Spa</a></h3>
-              <div class="content-text">
-                <div class="content-text-hotel">
-                  <p>Гостиница</p>
-                  <a href="#">Подробнее</a>
-                </div>
-                <div class="content-text-price">
-                  <p>От 4000 Р.</p>
-                  <a href="#">Забронировать</a>
-                </div>
-              </div>
-            </div>
-            <div class="status">
-              <div class="stars">
-                <div class="stars-pic"></div>
-                <div class="stars-pic"></div>
-                <div class="stars-pic"></div>
-                <div class="stars-pic"></div>
-              </div>
-              <p class="rating">Рейтинг: 8&#44;5</p>
-            </div>
-          </article>
-          <article class="catalog-item">
-            <div class="content-pic">
-              <img class="pic" src="img/hotels/motel.jpg" alt="Фото мотеля Desert Quail Inn" width="135" height="90">
-            </div>
-            <div class="content-text-wrap">
-              <h3><a href="#">Desert Quail Inn</a></h3>
-              <div class="content-text">
-                <div class="content-text-hotel">
-                  <p>Мотель</p>
-                  <a href="#">Подробнее</a>
-                </div>
-                <div class="content-text-price">
-                  <p>От 3000 Р.</p>
-                  <a href="#">Забронировать</a>
-                </div>
-              </div>
-            </div>
-            <div class="status">
-              <div class="stars">
-                <div class="stars-pic"></div>
-                <div class="stars-pic"></div>
-                <div class="stars-pic"></div>
-              </div>
-              <p class="rating">Рейтинг: 8&#44;9</p>
-            </div>
-          </article>
-          <article class="catalog-item">
-              <div class="content-pic">
-                <img class="pic" src="img/hotels/apartment.jpg" alt="Фото аппартаментов Villas at Poco Diablo" width="135" height="90">
-              </div>
-              <div class="content-text-wrap">
-                <h3><a href="#">Villas at Poco Diablo</a></h3>
-                <div class="content-text">
-                  <div class="content-text-hotel">
-                    <p>Апартаменты</p>
-                    <a href="#">Подробнее</a>
-                  </div>
-                  <div class="content-text-price">
-                    <p>От 2000 Р.</p>
-                    <a href="#">Забронировать</a>
-                  </div>
-                </div>
-              </div>
-              <div class="status">
-                <div class="stars">
-                  <div class="stars-pic"></div>
-                  <div class="stars-pic"></div>
-                </div>
-                <p class="rating">Рейтинг: 9&#44;2</p>
-              </div>
-            </article>
-        </section>                         <!-- ВЫВОД САЙТА КОНЕЦ-->
-      </main>                                <!-- ТЕЛО САЙТА КОНЕЦ-->
-            <footer class="footer">               <!-- ПОДВАЛ САЙТА НАЧАЛО-->
+        </section>
+        <section class="map">
+          <h2 class="visually-hidden">Как проехать в город Седона</h2>
+          <iframe class="map-responsive" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13035.629010817329!2d-111.7632990859573!3d34.870229663760014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1557581427866!5m2!1sru!2sru" width="1200" height="475" style="border:0" allowfullscreen>
+          </iframe>
+        </section>
+      </main>                               <!-- ТЕЛО САЙТА КОНЕЦ-->
+      <footer class="footer">               <!-- ПОДВАЛ САЙТА НАЧАЛО-->
         <h2 class="visually-hidden">Контактная информация</h2>
         <p class="footer-hashtag">&#35;visitSEDONA</p>
         <ul class="footer-social">
@@ -218,7 +172,7 @@
             </svg>
           </a>
         </p>
-      </footer>                                              <!-- ПОДВАЛ САЙТА КОНЕЦ-->
-    </div>                                   <!-- ОБОЛОЧКА САЙТА КОНЕЦ-->
+      </footer>                             <!-- ПОДВАЛ САЙТА КОНЕЦ-->
+    </div>                                  <!-- ОБОЛОЧКА САЙТА КОНЕЦ-->
   </body>
 </html>
