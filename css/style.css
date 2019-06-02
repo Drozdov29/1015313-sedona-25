@@ -16,6 +16,7 @@ body {
   position: relative;
 
   margin: 0;
+padding:0;
 
   text-transform: uppercase;
 
@@ -61,6 +62,9 @@ img {
   top: 0;
   left: 50%;
 
+  width: 140px;
+  min-height: 72px;
+
   transform: translateX(-50%);
 }
 
@@ -97,7 +101,7 @@ img {
   text-align: right;
 }
 .menu-list li:nth-child(3) {
-  margin-left: 90px;
+  margin-left: 89px;
 }
 
 .menu-click:hover,
@@ -130,7 +134,7 @@ img {
 
 .advantage-head::before {
   position: absolute;
-  top: 506px;
+  top: 507px;
 
   width: 1200px;
   height: 59px;
@@ -146,7 +150,7 @@ img {
   display: block;
 
   margin: 0 auto;
-  padding: 77px 0;
+  padding: 75px 0 80px 0;
 }
 
 .advantage-head-text {
@@ -162,7 +166,7 @@ img {
 }
 
 .advantage-head b {
-  padding: 60px 300px 30px;
+  padding: 60px 300px 29px;
 
   color: #000000;
 
@@ -172,7 +176,7 @@ img {
 
 .advantage-head p {
   margin: 0;
-  padding-bottom: 50px;
+  padding-bottom: 49px;
 
   color: #333333;
 }
@@ -187,6 +191,7 @@ img {
 .advantage-wrap {
   display: flex;
 
+box-sizing:content-box;
   min-height: 256px;
 
   text-align: center;
@@ -234,7 +239,7 @@ img {
 
 .advantage p:last-of-type {
   margin: 0;
-  padding: 22px 60px 59px;
+  padding: 22px 49px 59px;
 
   color: #ffffff;
 
@@ -254,6 +259,8 @@ img {
 }
 
 .advantage-pic img {
+  display: block;
+
   margin: 0 auto;
 }
 
@@ -264,17 +271,19 @@ img {
 
   background-color: #ffffff;
 }
+
 .advantage-subitem b {
   position: relative;
 
   display: block;
 
-  padding: 154px 60px 22px;
+  padding: 160px 60px 26px;
 
   font-size: 21px;
   font-weight: bold;
   line-height: 21px;
 }
+
 .advantage-subitem p {
   display: block;
 
@@ -288,7 +297,7 @@ img {
 
 .icon-home::before {
   position: absolute;
-  top: 50px;
+  top: 60px;
   left: 50%;
 
   width: 75px;
@@ -304,7 +313,7 @@ img {
 
 .icon-eat::before {
   position: absolute;
-  top: 50px;
+  top: 61px;
   left: 50%;
 
   width: 74px;
@@ -320,7 +329,7 @@ img {
 
 .icon-surprice::before {
   position: absolute;
-  top: 50px;
+  top: 56px;
   left: 50%;
 
   width: 64px;
@@ -396,9 +405,19 @@ line-height: 36px;
 .hotel-search {
   position: relative;
 
-  width: 568px;
   margin: 0 auto;
+}
 
+.form-wrapper {
+  position: absolute;
+  left: 50%;
+
+  width: 568px;
+  min-height: 395px;
+
+  transform: translateX(-50%);
+
+  background-color: #ffffff;
   box-shadow:  0 5px 15px rgba(0, 1, 1, 0.20);
 }
 
@@ -419,11 +438,11 @@ line-height: 36px;
 .search input{
   position: relative;
 
+  box-sizing: border-box;
   width: 346px;
   height: 38px;
   padding: 0;
 
-  color: red;
   border: none;
   background-color: #f2f2f2;
 }
@@ -433,7 +452,7 @@ line-height: 36px;
 }
 
 .search input:focus {
-  border: 2px solid #e5e5e5;
+  border: 2px solid #f2f2f2;
   background-color: #ffffff;
 }
 
@@ -446,6 +465,17 @@ line-height: 36px;
   justify-content: space-between;
 
   margin: 0;
+}
+
+.data-arrival-wrapper input,
+.data-departure-wrapper input {
+  padding-left: 10px;
+
+  text-transform: uppercase;
+
+  color: #000000;
+
+  font-weight: bold;
 }
 
 .data-arrival-wrapper {
@@ -496,10 +526,13 @@ padding-bottom: 30px;
   margin: 15px 0;
 
   text-align: center;
+  text-transform: uppercase;
 
-  color: red;
+  color: #000000;
   border: none;
   background-color: #f2f2f2;
+
+  font-weight: bold;
 }
 
 .adults,
@@ -526,6 +559,8 @@ padding-right: 28px;
   width: 38px;
   height: 38px;
 
+  cursor: pointer;
+
   border: none;
   background-image: url(../img/index/spritesheet.png);
   background-repeat: no-repeat;
@@ -538,11 +573,13 @@ padding-right: 28px;
   width: 38px;
   height: 38px;
 
+  cursor: pointer;
+
   border: none;
   background-color: #f2f2f2;
   background-image: url(../img/index/spritesheet.png);
   background-repeat: no-repeat;
-  background-position: -210px -2px; /*-210px -2px;*/
+  background-position: -210px -2px;
 }
 
 .minus:hover,
@@ -713,13 +750,42 @@ padding-right: 28px;
 
 .filter-list{
   display: flex;
+
+  width:1054px;
+  padding-top: 26px;
 }
 
 .filter-list fieldset {
+  border: 0 none;
+}
+
+.infrastructure{
+  display: block;
+
+  width: 253px;
   margin: 0;
   padding: 0;
+}
+.housing{
+  display: block;
 
-  border: 0 none;
+  width: 220px;
+  margin: 0;
+  padding: 0;
+}
+.price-day {
+  display: block;
+
+  width: 314px;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+}
+.infrastructure legend {
+margin-bottom: 10px;
+}
+.filter-input-checkbox {
+  margin-right: 12px;
 }
 
 .filter-text {
@@ -744,6 +810,7 @@ padding-right: 28px;
 
   padding: 12px 0;
 }
+
 
 /*.filter-input-checkbox + label::before {
   content:"";
@@ -840,9 +907,9 @@ padding-right: 28px;
 
 .price-controls label {
   display: inline-block;
-  vertical-align: top;
 
   cursor: pointer;
+  vertical-align: top;
   vertical-align: top;
 
   font-size: 14px;
@@ -978,9 +1045,10 @@ background-color: #ffffff;
 
 .price li {
   display: inline-block;
-  vertical-align: top;
 
   padding: 30px 28px 20px 0;
+
+  vertical-align: top;
 }
 
 .type-search,
@@ -1017,31 +1085,28 @@ background-color: #ffffff;
 
 .sort-control li{
   display: inline-block;
-  vertical-align: top;
 
   padding: 31px 0 29px 0;
+
+  vertical-align: top;
 }
 
 .sort-control a{
-  display: block;
-
-  width: 11px;
-  height: 10px;
   padding-left: 8px;
 }
 
-.up path:hover,
-.down path:hover {
+.up:hover path,
+.down:hover path {
   fill: #231f20;
 }
 
-.up path:focus,
-.down path:focus {
+.up:focus path,
+.down:focus path {
   fill: #231f20;
 }
 
-.up path:active,
-.down path:active{
+.up:active path,
+.down:active path {
   fill: #81b3d2;
 }
 
@@ -1049,8 +1114,8 @@ background-color: #ffffff;
 /*--------------------------------------------------------------------*/
 .content {
   background-color: #ffffff;
-
 }
+
 .content-pic {
   width: 135px;
   height: 90px;
@@ -1166,21 +1231,23 @@ background-color: #ffffff;
 
 .stars-pic {
   display: inline-block;
-  vertical-align: top;
 
   width: 18px;
   height: 17px;
   margin-left: 5px;
+
+  vertical-align: top;
 
   background-image: url(../img/hotels/stars.svg);
 }
 
 .rating {
   display: inline-block;
-  vertical-align: top;
 
   margin: 0;
   padding: 3px 13px;
+
+  vertical-align: top;
 
   color: #666666;
   background-color: #f2f2f2;
