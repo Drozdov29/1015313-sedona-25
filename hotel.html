@@ -42,7 +42,7 @@
                   <label for="infrastructure-parking">Парковка</label>
                 </li>
                 <li>
-                  <input class="filter-input-checkbox none-checkbox" type="checkbox" name="infrastructure-wifi" id="infrastructure-wifi">
+                  <input class="filter-input-checkbox none-checkbox" type="checkbox" name="infrastructure-wifi" id="infrastructure-wifi" disabled>
                   <label for="infrastructure-wifi">Wi-Fi</label>
                 </li>
               </ul>
@@ -59,7 +59,7 @@
                   <label for="type-housing-motel">Мотель</label>
                 </li>
                 <li>
-                  <input class="filter-input-checkbox none-checkbox" type="checkbox" name="type-housing-apartment" id="type-housing-apartment" checked>
+                  <input class="filter-input-checkbox none-checkbox" type="checkbox" name="type-housing-apartment" id="type-housing-apartment" checked disabled>
                   <label for="type-housing-apartment">Аппартаменты</label>
                 </li>
               </ul>
@@ -67,8 +67,8 @@
             <fieldset class="price-day">
               <legend class="filter-text filter-price">Стоимость в сутки (Р)&#58;</legend>
                 <div class="price-controls">
-                  <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-                  <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                  <label class="min-price">от <input type="number" name="min-price" value="0"></label>
+                  <label class="max-price">до <input type="number" name="max-price" value="3000"></label>
                 </div>
                 <div class="range-controls">
                   <div class="scale">
