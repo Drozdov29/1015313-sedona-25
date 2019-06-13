@@ -34,15 +34,15 @@
               <legend class="filter-text form-list">Инфраструктура&#58;</legend>
               <ul class="filter-text-list">
                 <li>
-                  <input class="filter-input-checkbox none-checkbox" type="checkbox" name="infrastructure-bassein" id="infrastructure-bassein" checked>
+                  <input class="filter-input-checkbox visually-hidden" type="checkbox" name="infrastructure-bassein" id="infrastructure-bassein" checked>
                   <label for="infrastructure-bassein">Бассейн</label>
                 </li>
                 <li>
-                  <input class="filter-input-checkbox none-checkbox" type="checkbox" name="infrastructure-parking" id="infrastructure-parking">
+                  <input class="filter-input-checkbox visually-hidden" type="checkbox" name="infrastructure-parking" id="infrastructure-parking">
                   <label for="infrastructure-parking">Парковка</label>
                 </li>
                 <li>
-                  <input class="filter-input-checkbox none-checkbox" type="checkbox" name="infrastructure-wifi" id="infrastructure-wifi" disabled>
+                  <input class="filter-input-checkbox visually-hidden" type="checkbox" name="infrastructure-wifi" id="infrastructure-wifi" disabled>
                   <label for="infrastructure-wifi">Wi-Fi</label>
                 </li>
               </ul>
@@ -51,15 +51,15 @@
               <legend class="filter-text form-list">Тип жилья&#58;</legend>
               <ul class="filter-text-list">
                 <li>
-                  <input class="filter-input-checkbox none-checkbox" type="checkbox" name="type-housing-hotel" id="type-housing-hotel" checked>
+                  <input class="filter-input-checkbox visually-hidden" type="checkbox" name="type-housing-hotel" id="type-housing-hotel" checked>
                   <label for="type-housing-hotel">Гостиница</label>
                 </li>
                 <li>
-                  <input class="filter-input-checkbox none-checkbox" type="checkbox" name="type-housing-motel" id="type-housing-motel" checked>
+                  <input class="filter-input-checkbox visually-hidden" type="checkbox" name="type-housing-motel" id="type-housing-motel" checked>
                   <label for="type-housing-motel">Мотель</label>
                 </li>
                 <li>
-                  <input class="filter-input-checkbox none-checkbox" type="checkbox" name="type-housing-apartment" id="type-housing-apartment" checked disabled>
+                  <input class="filter-input-checkbox visually-hidden" type="checkbox" name="type-housing-apartment" id="type-housing-apartment" checked disabled>
                   <label for="type-housing-apartment">Аппартаменты</label>
                 </li>
               </ul>
@@ -67,8 +67,8 @@
             <fieldset class="price-day">
               <legend class="filter-text filter-price">Стоимость в сутки (Р)&#58;</legend>
                 <div class="price-controls">
-                  <label class="min-price">от <input type="number" name="min-price" value="0"></label>
-                  <label class="max-price">до <input type="number" name="max-price" value="3000"></label>
+                  <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                  <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
                 </div>
                 <div class="range-controls">
                   <div class="scale">
@@ -129,6 +129,7 @@
                 <div class="stars-pic"></div>
                 <div class="stars-pic"></div>
               </div>
+              <span class="visually-hidden">4 звезды</span>
               <p class="rating">Рейтинг: 8&#44;5</p>
             </div>
           </article>
@@ -155,6 +156,7 @@
                 <div class="stars-pic"></div>
                 <div class="stars-pic"></div>
               </div>
+              <span class="visually-hidden">3 звезды</span>
               <p class="rating">Рейтинг: 8&#44;9</p>
             </div>
           </article>
@@ -180,6 +182,7 @@
                   <div class="stars-pic"></div>
                   <div class="stars-pic"></div>
                 </div>
+                <span class="visually-hidden">2 звезды</span>
                 <p class="rating">Рейтинг: 9&#44;2</p>
               </div>
             </article>
