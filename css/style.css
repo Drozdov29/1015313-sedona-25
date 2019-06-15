@@ -1466,3 +1466,42 @@ input::-webkit-inner-spin-button {
 /* СТРАНИЦА С ОТЕЛЯМИ КОНЕЦ*/
 
 /*--------------------------------------------------------------------*/
+
+/* КЛАСС ДЛЯ ВЫЕЗЖАЮЩЕГО ОКНА ПОИСКА*/
+
+.popup-up {
+  display: block;
+
+  animation: up;
+  animation-duration: 2s;
+
+  animation-fill-mode: forwards;
+}
+
+.popup-error {
+  display: block;
+
+  animation: error;
+  animation-duration: 2s;
+}
+
+@keyframes error {
+  0%,
+  100% {transform: translateX(0);}
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {transform: translateX(-20px);}
+
+  20%,
+  40%,
+  60%,
+  80% {transform: translateX(20px);}
+}
+
+@keyframes up {
+  0% {transform: translateY(0px);}
+  100% {transform: translateY(-395px);}
+}
