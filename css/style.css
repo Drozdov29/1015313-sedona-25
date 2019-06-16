@@ -470,14 +470,10 @@ img {
 
 .form-wrapper {
   position: absolute;
-  left: 50%;
+  left: 316px;
 
   width: 568px;
   min-height: 395px;
-
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
 
   background-color: #ffffff;
   -webkit-box-shadow:  0 5px 15px rgba(0, 1, 1, 0.20);
@@ -1469,39 +1465,81 @@ input::-webkit-inner-spin-button {
 
 /* КЛАСС ДЛЯ ВЫЕЗЖАЮЩЕГО ОКНА ПОИСКА*/
 
-.popup-up {
-  display: block;
+.popup-closed {
+  -webkit-animation-name: closed;
+          animation-name: closed;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
 
-  animation: up;
-  animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
 
-  animation-fill-mode: forwards;
+@-webkit-keyframes closed {
+  0% {-webkit-transform: translateY(0);transform: translateY(0);}
+  100% {-webkit-transform: translateY(-470px);transform: translateY(-470px);}
+}
+
+@keyframes closed {
+  0% {-webkit-transform: translateY(0);transform: translateY(0);}
+  100% {-webkit-transform: translateY(-470px);transform: translateY(-470px);}
+}
+
+.popup-open {
+  -webkit-animation-name: open;
+          animation-name: open;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes open {
+  0% {-webkit-transform: translateY(-430px);transform: translateY(-430px);}
+  100% {-webkit-transform: translateY(0);transform: translateY(0);}
+}
+
+@keyframes open {
+  0% {-webkit-transform: translateY(-430px);transform: translateY(-430px);}
+  100% {-webkit-transform: translateY(0);transform: translateY(0);}
 }
 
 .popup-error {
-  display: block;
-
-  animation: error;
-  animation-duration: 2s;
+  -webkit-animation-name: error;
+          animation-name: error;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
-@keyframes error {
+@-webkit-keyframes error {
   0%,
-  100% {transform: translateX(0);}
+  100% {-webkit-transform: translateX(0);transform: translateX(0);}
 
   10%,
   30%,
   50%,
   70%,
-  90% {transform: translateX(-20px);}
+  90% {-webkit-transform: translateX(-20px);transform: translateX(-20px);}
 
   20%,
   40%,
   60%,
-  80% {transform: translateX(20px);}
+  80% {-webkit-transform: translateX(20px);transform: translateX(20px);}
 }
 
-@keyframes up {
-  0% {transform: translateY(0px);}
-  100% {transform: translateY(-395px);}
+@keyframes error {
+  0%,
+  100% {-webkit-transform: translateX(0);transform: translateX(0);}
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {-webkit-transform: translateX(-20px);transform: translateX(-20px);}
+
+  20%,
+  40%,
+  60%,
+  80% {-webkit-transform: translateX(20px);transform: translateX(20px);}
 }
