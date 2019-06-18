@@ -983,12 +983,11 @@ img {
   cursor: pointer;
 }
 
-
 .filter-input-checkbox + label:before {
   position: absolute;
   left: 0;
 
-  width: 23px;
+  width: 27px;
   height: 23px;
 
   content: "";
@@ -1018,7 +1017,7 @@ img {
 }
 
 .filter-input-checkbox:focus + label:before {
-  border: 1px solid blue;
+  outline: #bf609f ridge 1px;
   background-image: url(../img/hotels/checkbox-off-focus.svg);
 }
 
@@ -1026,7 +1025,7 @@ img {
   width: 27px;
   height: 23px;
 
-  border: 1px solid blue;
+  outline: #bf609f ridge 1px;
   background-image: url(../img/hotels/checkbox-on-focus.svg);
 }
 
